@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+import Create from "./Create";
+import Login from "./Login";
+import Protected from "./Protected";
+import PrptectedRoute from "./PrptectedRoute";
+import Qa from "./Qa";
+import Update from "./Update";
+const App = () => {
+  const QA = 'QA';
+  const Puclic = 'public';
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Protected role={Puclic} />
+      <Protected role={QA} />
+    </>
+  )
 }
 
-export default App;
+export default App

@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'your-iconfont-name';
+    src: url('../../assets/icons/fonts/iconfont.eot');
+    src: url('../../assets/icons/fonts/iconfont.eot#iefix') format('embedded-opentype'), url('../../assets/icons/fonts/iconfont.ttf') format('truetype'), url('../../assets/icons/fonts/iconfont.svg#live') format('svg');
+}
+
+.icon {
+    font-family: 'your-iconfont-name' !important; // font-size: 16px;
+    font-style: normal;
+    transition: 0.3s;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    vertical-align: middle;
+
+    // things under refer to style.css in unzipped files.
+    &.icon-female:before {
+        content: "\e901";
+    }
+
+    &.icon-male:before {
+        content: "\e902";
+    }
+
+    &.icon-close:before {
+        content: "\e900";
+    }
+}
