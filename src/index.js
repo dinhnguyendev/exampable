@@ -4,7 +4,9 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './i18n';
+import axios from 'axios';
 import 'antd/dist/antd.css';
+// axios.defaults.headers.common['Accept-Laguage'] = localStorage.getItem('lang') || 'en';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
